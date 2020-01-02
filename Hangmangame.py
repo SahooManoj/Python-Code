@@ -7,7 +7,7 @@ Created on Wed Jan  1 15:54:35 2020
 import random
 import base64
 
-li = ["UG93ZXJTaGVsbA==","UHl0aG9u","SmF2YVNjcmlwdA=="]
+li = ["UG93ZXJTaGVsbA==","UHl0aG9u","SmF2YVNjcmlwdA=="] # contains specific word in encoded format
 
 img1="ICB8LS0tLS0tLS0tCiAgfCAgICAgICAgfAogIHwgICAgICAgIHwKICB8ICAgICAgICBPCiAgfCAgICAgICAvfFwKICB8ICAgICAgIC8gXAogIHwKICB8CiAgfA=="
 img1=(base64.b64decode(img1.encode())).decode()
