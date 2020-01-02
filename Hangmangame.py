@@ -41,4 +41,4 @@ for value in li:
             print("\nWrong ans, you have {} more attempt left!".format(attempt))
         else:
             print(imglist[2])
-            print("\nYou Kill me!")
+            print("\nYou Killed me!")
