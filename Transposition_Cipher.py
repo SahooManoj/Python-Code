@@ -5,7 +5,7 @@ def main():
 
     n=int(input())
     case=input("Input E for Encrypting and D for Decrypting : ")
-    if  not [case=="D" or case=="E"]:
+    if  not [case.upper()=="D" or case.upper()=="E"]:
         print("Invalid Input")
         return
     a=1
@@ -48,14 +48,14 @@ def main():
             m=65
             for eachkey in sortedkey:
                 index=key.index(eachkey)
-                if case=="D":
+                if case.upper()=="D":
                     dictionary[chr(eachkey)]=chr(m)
                 else:
                     dictionary[chr(m)]=chr(eachkey)
                 m+=1
                 for eachval in original:
                     if index<=len(eachval)-1:
-                        if case=="D":
+                        if case.upper()=="D":
                             dictionary[chr(eachval[index])]=chr(m)
                         else:
                             dictionary[chr(m)]=chr(eachval[index])
